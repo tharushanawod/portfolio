@@ -7,48 +7,40 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
+      title: "Corn Cradle",
       description:
-        "A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.",
-      tech: ["React", "Node.js", "MongoDB", "Stripe", "Tailwind CSS"],
-      image: "/api/placeholder/600/400",
-      liveUrl: "#",
-      githubUrl: "#",
+        "A digital platform empowering Sri Lankan corn farmers to sell harvests via online auctions. Includes features for buyers to bid, farmers to hire workers, and purchase ingredients. Ensures fair trade, transparency, and wider market reach for small-scale farmers.",
+      tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+      image: "project1.png",
+      liveUrl: "#", 
+      githubUrl: "https://github.com/tharushanawod/Corn-Cradle",
       imagePosition: "left",
-    },
+    }
+    ,
     {
       id: 2,
-      title: "3D Portfolio Website",
+      title: "Island Hop",
       description:
-        "An immersive portfolio website built with Three.js and React. Features interactive 3D elements, smooth animations, and responsive design.",
-      tech: ["React", "Three.js", "Framer Motion", "GSAP", "WebGL"],
-      image: "/api/placeholder/600/400",
+        "A smart tourism platform for Sri Lanka that connects travelers with destinations, experiences, and accommodations. Built with React, Spring Boot, and MongoDB, it features user-friendly UI, real-time data, and scalable backend services.",
+      tech: ["React.js", "Spring Boot", "Python", "MongoDB", "PostgreSQL", "Redis", "AWS", "Vercel"],
+      image: "project2.png",
       liveUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/3rdYearGroupProject", // add when repo is public
       imagePosition: "right",
-    },
+    }
+    ,
     {
       id: 3,
-      title: "AI Chat Application",
+      title: "CrownKeys Real Estate Platform",
       description:
-        "A real-time chat application powered by AI, built with React and OpenAI API. Features include intelligent responses and conversation history.",
-      tech: ["React", "OpenAI API", "Socket.io", "Express", "PostgreSQL"],
-      image: "/api/placeholder/600/400",
-      liveUrl: "#",
-      githubUrl: "#",
+        "A modern real estate listing platform where users can browse, search, and manage property listings. Features include property image galleries, JWT-based authentication, and integration with Supabase for backend services and storage.",
+      tech: ["React.js", "Express.js", "Supabase", "PostgreSQL", "Tailwind CSS"],
+      image: "project3.png",
+      liveUrl: "https://crown-keys-front-end.vercel.app/",
+      githubUrl: "https://github.com/tharushanawod/CrownKeys-Front-End", // add when repo is available
       imagePosition: "left",
-    },
-    {
-      id: 4,
-      title: "Task Management System",
-      description:
-        "A comprehensive task management application with drag-and-drop functionality, team collaboration, and real-time updates.",
-      tech: ["React", "Firebase", "DND Kit", "Tailwind CSS", "TypeScript"],
-      image: "/api/placeholder/600/400",
-      liveUrl: "#",
-      githubUrl: "#",
-      imagePosition: "right",
-    },
+    }
+   ,
   ];
 
   const containerVariants = {
@@ -129,13 +121,21 @@ const Projects = () => {
           }`}
         >
           <div className="relative overflow-hidden rounded-2xl glow-border">
-            {/* Placeholder image */}
-            <div className="w-full h-80 bg-gradient-to-br from-accent-blue/20 to-gray-600 flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-4xl text-accent-blue mb-2">🖼️</div>
-                <div className="text-white font-medium">{project.title}</div>
+            {/* Project Image */}
+            {project.image && project.image !== "/api/placeholder/600/400" ? (
+              <img
+                src={project.image}
+                alt={`${project.title} - Project Screenshot`}
+                className="w-full h-80 object-cover object-center"
+              />
+            ) : (
+              <div className="w-full h-80 bg-gradient-to-br from-accent-blue/20 to-gray-600 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-4xl text-accent-blue mb-2">🖼️</div>
+                  <div className="text-white font-medium">{project.title}</div>
+                </div>
               </div>
-            </div>
+            )}
 
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
