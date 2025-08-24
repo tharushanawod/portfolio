@@ -82,7 +82,7 @@ const About = () => {
               >
                 {/* Professional photo */}
                 <img
-                  src="/test.png"
+                  src="test.png"
                   alt="Tharusha Nawod - Full-Stack Developer"
                   className="w-full h-full object-cover object-center"
                 />
