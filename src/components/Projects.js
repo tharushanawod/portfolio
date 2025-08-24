@@ -12,35 +12,47 @@ const Projects = () => {
         "A digital platform empowering Sri Lankan corn farmers to sell harvests via online auctions. Includes features for buyers to bid, farmers to hire workers, and purchase ingredients. Ensures fair trade, transparency, and wider market reach for small-scale farmers.",
       tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
       image: "project1.png",
-      liveUrl: "#", 
+      liveUrl: "#",
       githubUrl: "https://github.com/tharushanawod/Corn-Cradle",
       imagePosition: "left",
-    }
-    ,
+    },
     {
       id: 2,
       title: "Island Hop",
       description:
         "A smart tourism platform for Sri Lanka that connects travelers with destinations, experiences, and accommodations. Built with React, Spring Boot, and MongoDB, it features user-friendly UI, real-time data, and scalable backend services.",
-      tech: ["React.js", "Spring Boot", "Python", "MongoDB", "PostgreSQL", "Redis", "AWS", "Vercel"],
+      tech: [
+        "React.js",
+        "Spring Boot",
+        "Python",
+        "MongoDB",
+        "PostgreSQL",
+        "Redis",
+        "AWS",
+        "Vercel",
+      ],
       image: "project2.png",
       liveUrl: "#",
       githubUrl: "https://github.com/3rdYearGroupProject", // add when repo is public
       imagePosition: "right",
-    }
-    ,
+    },
     {
       id: 3,
       title: "CrownKeys Real Estate Platform",
       description:
         "A modern real estate listing platform where users can browse, search, and manage property listings. Features include property image galleries, JWT-based authentication, and integration with Supabase for backend services and storage.",
-      tech: ["React.js", "Express.js", "Supabase", "PostgreSQL", "Tailwind CSS"],
+      tech: [
+        "React.js",
+        "Express.js",
+        "Supabase",
+        "PostgreSQL",
+        "Tailwind CSS",
+      ],
       image: "project3.png",
       liveUrl: "https://crown-keys-front-end.vercel.app/",
       githubUrl: "https://github.com/tharushanawod/CrownKeys-Front-End", // add when repo is available
       imagePosition: "left",
-    }
-   ,
+    },
   ];
 
   const containerVariants = {
