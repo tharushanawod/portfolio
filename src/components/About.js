@@ -74,13 +74,12 @@ const About = () => {
                 transition={{ duration: 0.3 }}
                 className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-accent-blue/30 glow-border"
               >
-                {/* Placeholder image - replace with actual image */}
-                <div className="w-full h-full bg-gradient-to-br from-accent-blue/20 to-gray-600 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-6xl text-accent-blue mb-2">👨‍💻</div>
-                    <div className="text-white font-medium">Tharusha Nawod</div>
-                  </div>
-                </div>
+                {/* Professional photo */}
+                <img
+                  src="/image.jpg"
+                  alt="Tharusha Nawod - Full-Stack Developer"
+                  className="w-full h-full object-cover object-center"
+                />
 
                 {/* Glow effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-accent-blue/10 to-transparent animate-pulse"></div>
