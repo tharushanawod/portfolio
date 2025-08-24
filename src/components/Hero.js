@@ -4,6 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere, Box } from "@react-three/drei";
 import { ChevronDown } from "lucide-react";
 import Orb from "./Orb";
+import Galaxy from "./Galaxy";
 
 // 3D Scene Component
 const Scene = () => {
@@ -188,7 +189,6 @@ const HeroModified = () => {
         hue={0}
         forceHoverState={false}
       />
-
       Content overlay
       <div className="absolute inset-0 z-20 text-center px-4 flex flex-col items-center justify-center pointer-events-none">
         <motion.div
@@ -229,6 +229,57 @@ const HeroModified = () => {
     </div>
   );
 };
+
+const GalaxyModified = () => {
+  return (
+    <div style={{ width: "100%", height: "100vh", position: "relative" }}>
+      <Galaxy
+        mouseRepulsion={true}
+        mouseInteraction={true}
+      />
+
+      {/* Content overlay */}
+      <div className="absolute inset-0 z-20 text-center px-4 flex flex-col items-center justify-center pointer-events-none">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="mb-6"
+        >
+          <h1 className="text-6xl md:text-8xl font-bold text-white mb-4">
+            <span className="text-accent-blue glow-text">Tharusha</span>
+            <br />
+            <span className="text-white">Nawod</span>
+          </h1>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 1 }}
+          className="mb-8"
+        >
+          <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+            Crafting digital experiences with cutting-edge technology and
+            creative innovation
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 1.5 }}
+        >
+          <div className="text-accent-blue text-sm font-medium tracking-wider uppercase">
+            Full-Stack Developer • UI/UX Designer • Creative Technologist
+          </div>
+        </motion.div>
+      </div>
+    </div>
+  );
+};
+
+export { GalaxyModified };
 
 export { HeroModified };
 

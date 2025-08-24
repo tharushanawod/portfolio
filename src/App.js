@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import MiniGallery from "./components/MiniGallery";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { GalaxyModified } from "./components/Hero";
 import { HeroModified } from "./components/Hero";
 
 function App() {
@@ -16,8 +17,9 @@ function App() {
       <div className="fixed top-1/2 right-32 w-64 h-64 light-spot opacity-20 pointer-events-none"></div>
       <div className="fixed bottom-32 left-1/3 w-80 h-80 light-spot opacity-25 pointer-events-none"></div>
 <Header/>
-      <HeroModified />
+      {/* <HeroModified /> */}
       {/* <Hero /> */}
+      <GalaxyModified/>
       <About />
       <Projects />
       <MiniGallery />
