@@ -125,7 +125,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             {/* Copyright */}
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              <span>© 2024 Tharusha Nawod. Made with </span>
+              <span>© 2025 Tharusha Nawod. Made with </span>
               <Heart size={14} className="inline text-red-400 mx-1" />
               <span> and lots of ☕</span>
             </div>

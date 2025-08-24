@@ -37,7 +37,7 @@ const Contact = () => {
     {
       name: "LinkedIn",
       icon: Linkedin,
-      url: "https://linkedin.com/in/tharushanawod",
+      url: "https://linkedin.com/in/tharusha-nawod-jayasinghe-269576249",
       color: "#0077B5",
     },
     {
@@ -52,19 +52,19 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "tharusha@example.com",
-      link: "mailto:tharusha@example.com",
+      value: "tharushanawod777@gmail.com",
+      link: "mailto:tharushanawod777@gmail.com",
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
+      value: "+94 703938863",
+      link: "+94 703938863",
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "San Francisco, CA",
+      value: "Pamankada, Colombo",
       link: "#",
     },
   ];

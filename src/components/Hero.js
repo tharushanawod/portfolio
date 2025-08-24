@@ -16,7 +16,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="mb-6"
+          className="mb-6 pointer-events-none"
         >
           <h1 className="text-6xl md:text-8xl font-bold text-white mb-4">
             <span className="text-accent-blue glow-text">Tharusha</span>
@@ -29,7 +29,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1 }}
-          className="mb-8"
+          className="mb-8 pointer-events-none"
         >
           <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
             Crafting digital experiences with cutting-edge technology and
@@ -41,6 +41,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.5 }}
+          className="pointer-events-none"
         >
           <div className="text-accent-blue text-sm font-medium tracking-wider uppercase">
             Full-Stack Developer • UI/UX Designer • Creative Technologist
@@ -51,9 +52,13 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 2 }}
-          className="mt-8"
+          className="mt-8 pointer-events-auto"
         >
-          <button className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-accent-blue to-blue-600 rounded-full overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-accent-blue/25 active:scale-95">
+          <a
+            href="/Tharusha-Nawod-Jayasinghe-FullStack-Developer-Intern.pdf"
+            download="Tharusha-Nawod-Jayasinghe-FullStack-Developer-Intern-CV.pdf"
+            className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-accent-blue to-blue-600 rounded-full overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-accent-blue/25 active:scale-95"
+          >
             <span className="relative z-10 flex items-center gap-3">
               <svg
                 className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
@@ -70,8 +75,8 @@ const Hero = () => {
               </svg>
               Download CV
             </span>
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-accent-blue opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-full"></div>
-          </button>
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-accent-blue opacity-0 transition-opacity duration-300 group-hover:translate-x-1 group-hover:opacity-100 rounded-full"></div>
+          </a>
         </motion.div>
       </div>
     </div>
