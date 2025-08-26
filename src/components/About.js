@@ -2,7 +2,17 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Code, FileCode, FileText, Code2, Zap } from "lucide-react";
-import { SiPhp, SiSpring, SiExpress,SiMysql,SiMongodb,SiPostgresql,SiRedis,SiDocker,SiKubernetes } from 'react-icons/si';
+import {
+  SiPhp,
+  SiSpring,
+  SiExpress,
+  SiMysql,
+  SiMongodb,
+  SiPostgresql,
+  SiRedis,
+  SiDocker,
+  SiKubernetes,
+} from "react-icons/si";
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -14,13 +24,13 @@ const About = () => {
     { name: "HTML", icon: FileText, color: "#E34F26" },
     { name: "CSS", icon: FileCode, color: "#1572B6" },
     { name: "JavaScript", icon: Code, color: "#F7DF1E" },
-    { name: "PHP", icon: SiPhp , color: "#777BB4" },
+    { name: "PHP", icon: SiPhp, color: "#777BB4" },
     { name: "React", icon: Zap, color: "#61DAFB" },
-    { name: "Spring Boot", icon: SiSpring , color: "#6DB33F" },
-    { name: "Express.js", icon: SiExpress , color: "#F7DF1E" },
-    { name: "MySQL", icon: SiMysql , color: "#4479A1" },
-    { name: "MongoDB", icon: SiMongodb , color: "#47A248" },
-    { name: "PostgreSQL", icon: SiPostgresql , color: "#336791" },
+    { name: "Spring Boot", icon: SiSpring, color: "#6DB33F" },
+    { name: "Express.js", icon: SiExpress, color: "#F7DF1E" },
+    { name: "MySQL", icon: SiMysql, color: "#4479A1" },
+    { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+    { name: "PostgreSQL", icon: SiPostgresql, color: "#336791" },
   ];
 
   const containerVariants = {
@@ -82,7 +92,7 @@ const About = () => {
               >
                 {/* Professional photo */}
                 <img
-                  src="test.png"
+                  src="/test.png"
                   alt="Tharusha Nawod - Full-Stack Developer"
                   className="w-full h-full object-cover object-center"
                 />
