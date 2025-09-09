@@ -55,8 +55,8 @@ const Hero = () => {
           className="mt-8 pointer-events-auto"
         >
           <a
-            href="/Tharusha-Nawod-Jayasinghe-FullStack-Developer-Intern.pdf"
-            download="Tharusha-Nawod-Jayasinghe-FullStack-Developer-Intern-CV.pdf"
+            href="/Tharusha-Nawod-Jayasinghe-SE-CV.pdf"
+            download="Tharusha-Nawod-Jayasinghe-SE-CV.pdf"
             className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-accent-blue to-blue-600 rounded-full overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-accent-blue/25 active:scale-95"
           >
             <span className="relative z-10 flex items-center gap-3">
